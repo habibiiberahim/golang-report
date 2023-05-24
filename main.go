@@ -19,7 +19,7 @@ import (
 )
 
 func main() {
-	dsn := "randal:dbrandaltapin2021@tcp(36.95.205.37:3306)/absen?charset=utf8mb4&parseTime=True&loc=Local"
+
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		fmt.Println("failed to connect database")
